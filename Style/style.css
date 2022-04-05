@@ -1,0 +1,264 @@
+:root{
+    --cinzae: #42423b;
+    --cinzaclaro: #cfd0bf;
+    --amarelo: 	#d2e75f;
+    --laranja: #ddd057;
+    --laranjaescuro:#d6b054;
+    --vermelho: #ff8c8c;
+    --pretotransp: #00000099;
+}
+
+@font-face { 
+    font-family: 'Mocking Bird';
+    src: url('../Fonts/MockingBird.otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+
+body {
+    background-color: var(--cinzae);
+    font-family: "Times New Roman", Times, serif;
+    color: var(--laranjaescuro);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    background-color: var(--cinzae);
+    justify-content: space-between;    
+    position: fixed;
+    margin-left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo{
+    color: var(--amarelo);
+    font-family: "Mocking Bird";
+    font-size: 100px;
+    margin-left: 15px;
+    text-shadow: -5px 5px 0 #000,
+                          5px 5px 0 #000,
+                         5px -5px 0 #000,
+                        -5px -5px 0 #000;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--cinzaclaro);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--laranja);
+}
+
+
+/*Video principal*/
+
+.video-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('../img/Super_birb.png');
+
+    min-height: 400px;
+    background-size: cover;
+
+    margin-bottom: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.video-principal .descricao{
+    margin-bottom: 90px;
+}
+
+.titulo{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.botao{
+    background-color: var(--pretotransp);
+    text-align: center;
+    padding: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+    color: var(--laranjaescuro);
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: var(--laranjaescuro);
+    color: black;
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+#more-info{
+    box-shadow: 1px 1px rgb(116, 116, 116) inset, 
+                -1px -1px rgb(32, 32, 32) inset,
+                -1px -1px rgb(116, 116, 116), 
+                1px 1px rgb(32, 32, 32);
+    text-decoration: none;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.video-principal .container{
+    width: 50%;
+}
+
+.box-video{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*Carousel*/
+
+.carousel-info{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+
+.carousel-info button{
+    font-size: 50%;
+    width: 50%;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-info a{
+    font-size: 50%;
+    width: 50%;
+    height: 20%;
+    margin: 0;
+    padding: 4%;
+}
+
+img:hover + div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carousel-info:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carousel-button{
+    position: relative;
+    font-size: auto;
+}
+
+/*Video player*/
+#videoPlayer{
+    height: 400px;
+    padding: 0;
+    display: none;
+    margin: 10px;
+    position: relative;
+}
+
+#container2{
+    position: relative;
+    top: 350px;
+}
+
+.botao-voltar{
+    margin: 0;
+}
+
+/*Documentaries related*/
+
+#documentaries{
+    padding-top: 5px;
+    background-color: var(--cinzaclaro);
+    padding-bottom: 20px;
+}
+
+#documentaries h2{
+    font-size: 100px;
+    color: var(--vermelho);
+    font-family: 'Mocking Bird';
+    text-shadow: -5px 5px 0 #000,
+                          5px 5px 0 #000,
+                         5px -5px 0 #000,
+                        -5px -5px 0 #000;
+    text-align: center;
+    margin: 20px;
+}
+
+#doc-content{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.doc-item{
+    position: relative;
+    margin: 0 5px 10px 5px;
+    width: 30%;
+}
+
+.doc-item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.doc-info{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+
+img:hover + div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.docs-info:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carousel-info h3{
+    font-size: 20px;
+}

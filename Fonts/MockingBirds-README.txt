@@ -1,0 +1,13 @@
+Atention: This font isn't mine. The author allow personal use only
+
+Author notes:
+
+Hello, please contact me before any commercial use. 
+My fonts for free use allowed only in personal project , non-profit and charity use. 
+If you make money from using my fonts, Please purchase a commercial license
+here : http://www.typhoontype.net/fonts/mocking-bird/
+
+Typhoon Type - Suthi Srisopha 
+—————————————— 
+typhoontype@gmail.com 
+http://www.typhoontype.net

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirbFlix</title>
+    <link rel="stylesheet" href="Style/style.css">
+
+    <!--Responsividade-->
+    <link rel="stylesheet" href="Style/responsive.css">
+
+    <!--Owl css-->
+    <link rel="stylesheet" href="Style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="Style/owl/owl.theme.default.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container" id="NavBar">
+            <h2 id="logo">BirbFlix</h2>
+            <nav>
+                <a href="#">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-video"></i> Videos
+                </a>
+
+                <a href="#documentaries">
+                    <i class="fa-solid fa-book"></i> Documentaries
+                </a>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="video-principal" id="main-video">
+            <div class="container" id="container1">
+                <h3 class="titulo">Super Dommi</h3>
+                <p class="descricao">It's a plane... It's Superman... It's a bird! A super Bird! Super Dommi 
+                    came to punish the evil of the Tiel city, nothing can stop him from saving the day, or can it?
+                </p>
+                <div class="botoes">
+                    <button role="button" class="botao" onclick="toggleVideoPlayer('https://www.youtube.com/embed/e1s8oshgNEg')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=e1s8oshgNEg">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>  
+            <div id="videoPlayer" style="width: 100%">
+                <iframe id="video-player-iframe" width="70%" height="70%" src="" frameborder=”0″ allowfullscreen style="position: absolute; top:10%; left: 10%;">
+                </iframe>
+
+                <div id="container2">
+                    <button class="botao botao-voltar" onclick="toggleVideoPlayer('close')">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        GO BACK
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-videos">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="img/onnibath.jpg" alt="">
+                <div class="carousel-info">
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/TBIUR_-DWbA')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=TBIUR_-DWbA">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/culturedgumi.jpg" alt="">
+                <div class="carousel-info">
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/sdUGGD_44gY')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=sdUGGD_44gY">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/gumistarring.jpg" alt="">
+                <div class="carousel-info">
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/kUJw2eVYznw')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=kUJw2eVYznw">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/bowiefaces.png" alt="">
+                <div class="carousel-info">
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/SosNAZjsydc')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=SosNAZjsydc">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/hawkalarm.jpg" alt="">
+                <div class="carousel-info">
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/0IJEj7Ms7Bw')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=0IJEj7Ms7Bw">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/scremded.jpg" alt="">
+                <div class="carousel-info">
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/tAqSWOqysrw')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=tAqSWOqysrw">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/honkwars.jpg" alt="">
+                <div class="carousel-info">
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/CrUckHgllOs')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=CrUckHgllOs">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/strangerhonks.jpg" alt="">
+                <div class="carousel-info">
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/yHterNkyTtQ')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=yHterNkyTtQ">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="documentaries">
+        <h2>Documentaries</h2>
+        <div id="doc-content">
+            <!--link: https://www.youtube.com/watch?v=x9PJVypHXBw-->
+            <div class="doc-item">
+                <img id="doc-img" src="img/documentary/parrots.jpg" alt="parrotsdoc">
+                <div class="carousel-info">
+                    <h3>The Indonesian Parrot Project</h3>
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/x9PJVypHXBw')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=x9PJVypHXBw">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+            <div class="doc-item">
+                <img id="doc-img" src="img/documentary/birdsofaustralia.jpg" alt="birdsofaustraliadoc">
+                <div class="carousel-info">
+                    <h3>Cockatiel of Australia</h3>
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/cIXpGanwn3E')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=cIXpGanwn3E">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+            <div class="doc-item">
+                <img src="img/documentary/macawking.jpg" alt="macawdoc">
+                <div class="carousel-info">
+                    <h3>The Macaw Kingdom</h3>
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/3ieppWouPxk')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=3ieppWouPxk">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+            <div class="doc-item">
+                <img src="img/documentary/unbelievable.jpg" alt="behavioursdoc">
+                <div class="carousel-info">
+                    <h3>Unbelievable Bird Behaviours</h3>
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/twJaTtWxKCc')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=twJaTtWxKCc">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+            <div class="doc-item">
+                <img src="img/documentary/birdsofpassage.jpg" alt="passagedoc">
+                <div class="carousel-info">
+                    <h3>Birds of Passage - A Secret Journey Through the Skies</h3>
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/qNcEmhqSobY')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=qNcEmhqSobY">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+            <div class="doc-item">
+                <img src="img/documentary/secretary.jpg" alt="secretarydoc">
+                <div class="carousel-info">
+                    <h3>Secretary Birds: Killer Queens</h3>
+                    <button role="button" class="botao carousel-button" onclick="toggleVideoPlayer('https://www.youtube.com/embed/difrBNjGwLo')">
+                        <i class="fa-solid fa-play"></i>
+                        WATCH NOW
+                    </button>
+                    <a role="button" class="botao carousel-button" id="more-info" target="_blank" href="https://www.youtube.com/watch?v=difrBNjGwLo">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MORE INFO
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/34ff04463c.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/setup.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

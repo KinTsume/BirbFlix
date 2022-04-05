@@ -1,0 +1,47 @@
+@media screen and (max-width: 700px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;;
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .botao-voltar{
+        width: auto;
+    }
+
+    /*Responsive documentaries area*/
+
+    .doc-item{
+        width: 90%;
+    }
+
+    .doc-item .carousel-info h3{
+        font-size: 30px;
+    }
+    
+    .doc-item .carousel-info button{
+        font-size: 15px;
+    }
+
+    .doc-item .carousel-info a{
+        font-size: 15px;
+    }
+
+    /*-------------------------------------*/
+}
+
+@media screen and (min-width: 100px){
+    .descricao{
+        width: 75%;
+    }
+}
